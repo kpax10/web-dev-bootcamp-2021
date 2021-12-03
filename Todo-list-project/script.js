@@ -1,23 +1,23 @@
-const toDoList = [];
+let toDoList = [];
+
 
 let initQuestion = prompt('What would you like to do?')
 while (initQuestion !== 'quit') {
-    while (initQuestion === "new") {
-        console.log('new!')
-        break
+    if (initQuestion === "new") {
+        toDoList.push(prompt('Enter new todo:'))
+        let displayItem = toDoList[toDoList.length - 1];
+        console.log(`${displayItem} added to list`)
+    }
+    if (initQuestion === "list") {
+        // let arrLocation = toDoList.length - 1;
+        console.log('************')
+        for (let items in toDoList) {
+            console.log(`${items}: ${toDoList[items]}`)
+        }
+        console.log('************')
     }
     initQuestion = prompt('What would you like to do?')
 }
-
-
-
-// while (initQuestion !== "quit") {
-//     console.log("yay")
-// initQuestion = prompt("What would you like to do?")
-// if (initQuestion === "new") {
-// let addedItem = toDoList.push(prompt("Enter new todo:"))
-// console.log(addedItem[toDoList])
-
 
 
 if (initQuestion === "quit") {
