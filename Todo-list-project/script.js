@@ -1,14 +1,16 @@
-const initQuestion = prompt("What would you like to do?");
+let initQuestion = prompt("What would you like to do?");
 const toDoList = [];
 
-while (initQuestion === "quit") break; {
-    console.log("OK, YOU QUIT THE APP")
-}
 
-while (initQuestion = "new") {
-    console.log("Enter New Todo")
+while (initQuestion !== "quit") {
+    if (initQuestion === "new") {
+        let addedItem = toDoList.push(prompt("Enter new todo:"))
+        console.log(addedItem)
+    }
 }
-
+if (initQuestion === "quit") {
+    console.log("YOU QUIT")
+}
 
 
 
