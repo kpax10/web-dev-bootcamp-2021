@@ -1,6 +1,5 @@
 let toDoList = [];
 
-
 let initQuestion = prompt('What would you like to do?')
 while (initQuestion !== 'quit') {
     //add item function
@@ -19,7 +18,9 @@ while (initQuestion !== 'quit') {
     }
     //delete function
     if (initQuestion === 'delete') {
-        console.log('delete')
+        let deleteNum = parseInt(prompt('Item number do you want to delete:'))
+        toDoList.splice(deleteNum, 1)
+        console.log('Todo Removed')
     }
 
     initQuestion = prompt('What would you like to do?')
