@@ -1,4 +1,4 @@
-let toDoList = [];
+const toDoList = [];
 
 let initQuestion = prompt('What would you like to do?')
 while (initQuestion !== 'quit') {
@@ -22,18 +22,9 @@ while (initQuestion !== 'quit') {
         toDoList.splice(deleteNum, 1)
         console.log('Todo Removed')
     }
-
     initQuestion = prompt('What would you like to do?')
 }
-
 
 if (initQuestion === 'quit') {
     console.log('You quit')
 }
-
-
-
-
-// while promp = new, add object to array
-//while prompt = list, console.log array
-//while prompt = delete, prompt for "enter the index of the item to delete "
