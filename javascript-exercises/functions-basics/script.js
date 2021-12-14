@@ -87,8 +87,26 @@
 // }
 
 
-function capitalize(input) {
-    const firstLetter = input.slice(0, 1);
-    const lastLetters = input.slice(1);
-    return firstLetter.toUpperCase() + lastLetters;
+
+// function capitalize(string) {
+//     return string[0].toUpperCase() + string.slice(1, string.length);
+// }
+
+
+
+// function sumArray(array) {
+//     let total = 0;
+//     for (let i = 0; i < array.length; i++) {
+//         total += array[i];
+//     }
+//     return total;
+// } 
+
+
+const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+function returnDay(input) {
+    if (input >= 1 && input <= 7) {
+        return days[input - 1];
+    }
+    return null;
 }
