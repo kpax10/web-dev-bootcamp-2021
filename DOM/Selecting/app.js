@@ -21,3 +21,8 @@ const links = document.querySelectorAll('p a')
 for (let link of links) {
     console.log(link.href)
 }
+
+
+// Selects all elements with a class of "done", and a single checkox with a type of "checkbox"
+const doneTodos = document.querySelectorAll('.done');
+const checkbox = document.querySelector('input[type= checkbox]')
