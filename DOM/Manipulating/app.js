@@ -30,3 +30,9 @@ const allSpans = document.querySelectorAll('span');
 for (let i = 0; i < colors.length; i++) {
     allSpans[i].style.color = colors[i];
 }
+
+//Toggle an existing class thats alreadt applied using classList.toggle
+const allLi = document.querySelectorAll('li');
+for (let li of allLi) {
+    li.classList.toggle('highlight')
+}
