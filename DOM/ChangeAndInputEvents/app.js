@@ -13,10 +13,6 @@
 const h1 = document.querySelector('h1');
 const input = document.querySelector('input');
 
-
-//target form
-input.addEventListener('input', function (e) {
-    console.log('inputs');
+input.addEventListener('input', function () {
+    h1.innerText = input.value;
 })
-//add event listener for input then assign variable to the input?
-// add innerText to h1
